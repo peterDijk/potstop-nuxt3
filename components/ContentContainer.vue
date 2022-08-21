@@ -9,7 +9,7 @@
       <div
         class="container mx-auto h-full relative flex-row justify-center overflow-scroll"
       >
-        <Header :headerData="header.data" />
+        <Header :headerData="{...header.data}" />
         <slot />
       </div>
     </div>
