@@ -19,7 +19,7 @@
         <h1
           class="text-xl sm:text-1xl md:text-2xl lg:text-3xl xl:text-4xl text-white pl-6 p-3 text-right w-full"
         >
-          {{headerData['title'][0].text }}
+          {{headerData['title'] }}
         </h1>
       </div>
     </div>

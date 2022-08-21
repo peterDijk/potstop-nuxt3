@@ -9,7 +9,7 @@
       <div
         class="container mx-auto h-full relative flex-row justify-center overflow-scroll"
       >
-        <Header :headerData="header.data" />
+        <Header :headerData="{...header.data, title: title }" />
         <slot />
       </div>
     </div>
@@ -19,4 +19,8 @@
 <script setup>
   const { client } = usePrismic();
   const { data: header } = await useAsyncData('header', () => client.getSingle('header'));
+
+  const props = defineProps({
+    title: String
+  })
 </script>
