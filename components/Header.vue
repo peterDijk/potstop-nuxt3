@@ -8,6 +8,7 @@
         <span>over potstop</span>
       </a>
     </Slide> -->
+    <Menu />
     <div class="pt-48" />
     <div class="p-4 pt-2">
       <div class="flex-row">
