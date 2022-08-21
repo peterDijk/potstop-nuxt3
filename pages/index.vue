@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContentContainer :title="homepage.data.body[0
+    <ContentContainer :title="header.data.title[0
     ].text">
       <Content :data="homepage.data" />
     </ContentContainer>
@@ -10,5 +10,6 @@
 <script setup>
   const { client } = usePrismic();
   const { data: homepage } = await useAsyncData('homepage', () => client.getSingle('homepage'));
+  const { data: header } = await useAsyncData('header', () => client.getSingle('header'));
 
 </script>
