@@ -1,31 +1,25 @@
 <template>
-  <div />
+<div>
+    <Head>
+      <Title>{{ seoData.title[0].text }}</Title>
+      <Meta name="description" :content="seoData.description" />
+      <Meta name="keywords" :content="allKeywords"/>
+    </Head>
+</div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
-    props: {
+  props: {
     seoData: {
       type: Object,
       required: true,
     },
   },
-  head() {
+  data() {
     return {
-      title: this.seoData.title[0].text,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.seoData.description,
-        },
-        {
-          hid: 'keywords',
-          name: 'keywords',
-          content: this.seoData.keywords.map(item => item.keyword),
-        }
-      ],
+      allKeywords: this.seoData.keywords.map((item) => item.keyword),
     }
-}
+  }
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!-- <Seo :seoData="seo.data" /> -->
+    <Seo :seoData="seo.data" />
     <ContainerBgImage :headerData="header.data">
       <Header :headerData="header.data" />
-      <!-- <Content :data="homepage.data" /> -->
+      <Content :data="homepage.data" />
     </ContainerBgImage>
   </div>
 </template>
