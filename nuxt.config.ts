@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/prismic', '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
   prismic: { 
     endpoint: 'potstop',
-    linkResolver: '@/plugins/link-resolver',
-    htmlSerializer: '@/plugins/html-serializer',
+    // linkResolver: '@/plugins/link-resolver',
+    // htmlSerializer: '@/plugins/html-serializer',
   },
   tailwindcss: {
     configPath: '~/tailwind.config.js',

@@ -4,11 +4,11 @@
  */
 
 // import { RichText } from '@prismicio/helpers';
-import linkResolver from './link-resolver';
+// import linkResolver from './link-resolver';
 
-export default {
-  paragraph: ({ children }) => `<p class="text-base mb-4">${children}</p>`,
-}
+// export default {
+//   paragraph: ({ children }) => `<p class="text-base mb-4">${children}</p>`,
+// }
 
 // const Elements = RichText.Elements;
 

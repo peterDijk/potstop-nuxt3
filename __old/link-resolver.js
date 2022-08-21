@@ -3,9 +3,9 @@
  * https://prismic.io/docs/vuejs/beyond-the-api/link-resolving
  */
 
- export default function() {
-  return '/'
-}
+//  export default function() {
+//   return '/'
+// }
 
 // export default function (doc) {
 //   if (doc.isBroken) {
