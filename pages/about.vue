@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContentContainer>
+    <ContentContainer :title="about.data.title[0].text">
       <Content :data="about.data" />
     </ContentContainer>
   </div>

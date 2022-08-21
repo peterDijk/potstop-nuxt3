@@ -1,7 +1,6 @@
 <template>
   <div>
-    <ContentContainer>
-      <!-- {{ gallery.data.body[0].items }} -->
+    <ContentContainer title="Gallery">
       <GalleryContainer :items="gallery.data.body[0].items" />
     </ContentContainer>
   </div>
