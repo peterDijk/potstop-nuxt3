@@ -1,15 +1,12 @@
 <template>
   <div>
-    <Seo />
-    <ContainerBgImage :headerData="header.data">
-      <Header :headerData="header.data" />
+    <ContentContainer>
       <Content :data="homepage.data" />
-    </ContainerBgImage>
+    </ContentContainer>
   </div>
 </template>
 
 <script setup>
   const { client } = usePrismic();
-  const { data: header } = await useAsyncData('header', () => client.getSingle('header'));
   const { data: homepage } = await useAsyncData('homepage', () => client.getSingle('homepage'));
 </script>
