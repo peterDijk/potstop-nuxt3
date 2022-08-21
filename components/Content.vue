@@ -8,7 +8,7 @@
 export default {
   props: {
     data: {
-      type: Object,
+      type: { body: unknown },
       required: true
     }
   }
