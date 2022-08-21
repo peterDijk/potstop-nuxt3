@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      allKeywords: this.seoData.keywords.map((item) => item.keyword),
+      allKeywords: this.seoData.keywords.map((item) => item.keyword).toString(),
     }
   }
 }
