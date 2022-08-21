@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.0-0",
+    "@prismicio/helpers": "^2.3.3",
     "@tailwindcss/typography": "^0.5.4"
   }
 }

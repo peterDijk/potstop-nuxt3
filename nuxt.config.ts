@@ -3,7 +3,11 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxtjs/prismic', '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
-  prismic: { endpoint: 'potstop' },
+  prismic: { 
+    endpoint: 'potstop',
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer',
+  },
   tailwindcss: {
     configPath: '~/tailwind.config.js',
     cssPath: '~/assets/styles/tailwind.css',
