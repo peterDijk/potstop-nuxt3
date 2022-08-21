@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Seo :seoData="seo.data" />
+    <Seo />
     <ContainerBgImage :headerData="header.data">
       <Header :headerData="header.data" />
       <Content :data="homepage.data" />
@@ -12,6 +12,6 @@
   const { client } = usePrismic();
   const { data: header } = await useAsyncData('header', () => client.getSingle('header'));
   const { data: homepage } = await useAsyncData('homepage', () => client.getSingle('homepage'));
-  const { data: seo } = await useAsyncData('seo', () => client.getSingle('seo'));
+  // const { data: seo } = await useAsyncData('seo', () => client.getSingle('seo'));
 
 </script>
