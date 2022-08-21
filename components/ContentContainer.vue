@@ -1,24 +1,20 @@
 <template>
+  <Seo />
   <div class="w-screen h-screen bg-white overflow-hidden absolute">
     <img
-      :src="headerData['header-image'].url"
+      :src="header.data['header-image'].url"
       class="object-cover h-full w-full absolute"
     />
     <div
       class="container mx-auto h-full relative flex-row justify-center overflow-scroll"
     >
+      <Header :headerData="header.data" />
       <slot />
     </div>
   </div>
 </template>
 
-<script>
-export default {
-    props: {
-    headerData: {
-      type: Object,
-      required: true,
-    }
-  }
-}
+<script setup>
+  const { client } = usePrismic();
+  const { data: header } = await useAsyncData('header', () => client.getSingle('header'));
 </script>
