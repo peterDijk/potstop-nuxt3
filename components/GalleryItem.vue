@@ -1,7 +1,8 @@
 <template>
-  <div class="p-6 inline-block max-w-md">
+  <div class="inline-block w-full group">
     <img :src="item.image.url" />
-    <div><span>{{ item.title[0].text }}</span></div>
+    <div class="font-bold">{{ item.title[0].text }}</div>
+    <div class="text-slate-800 mb-4">{{ item.description }}</div>
   </div>  
 </template>
 
