@@ -1,13 +1,5 @@
 <template>
   <div id="header-text">
-    <!-- <Slide>
-      <a id="home" href="/">
-        <span>home</span>
-      </a>
-      <a id="about" href="/about">
-        <span>over potstop</span>
-      </a>
-    </Slide> -->
     <Menu />
     <div class="pt-48" />
     <div class="p-4 pt-2">

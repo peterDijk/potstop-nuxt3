@@ -1,7 +1,6 @@
 <template>
   <div>
-    <ContentContainer :title="header.data.title[0
-    ].text">
+    <ContentContainer :title="header.data.title[0].text">
       <Content :data="homepage.data" />
     </ContentContainer>
   </div>
