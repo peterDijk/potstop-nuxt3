@@ -1,13 +1,5 @@
 <template>
   <div id="header-text">
-    <!-- <Slide>
-      <a id="home" href="/">
-        <span>home</span>
-      </a>
-      <a id="about" href="/about">
-        <span>over potstop</span>
-      </a>
-    </Slide> -->
     <Menu />
     <div class="pt-48" />
     <div class="p-4 pt-2">
@@ -19,7 +11,7 @@
         <h1
           class="text-xl sm:text-1xl md:text-2xl lg:text-3xl xl:text-4xl text-white pl-6 p-3 text-right w-full"
         >
-          {{headerData['title'][0].text }}
+          {{headerData['title'] }}
         </h1>
       </div>
     </div>
